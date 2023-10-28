@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-1: #272829;
+  --bg-2: #313334;
+  --bg-3: #61677A;
+  --bg-4: #F7E987;
+  --bg-5: #5B9A8B;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: white;
+  background: var(--bg-1);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bg-circle {
+  background-color: var(--bg-2);
+}
+
+.bg-icon {
+  background-color: var(--bg-3);
+}
+
+.bg-title-job {
+  background-color: var(--bg-5);
+}
+
+.left {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.bg-button-join {
+  background-color: var(--bg-4);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.bg-button-join:hover {
+  background-color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 20pt;
+  font-weight: 700;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.nav {
+  background: var(--bg-1);
+}
+
+.nav-link {
+  font-family: 'Lekton', sans-serif;
+}
